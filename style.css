@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    text-decoration: none;
+    color: #fff;
+    background: #008032;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all linear 0.4s;
+}
+.btn:hover{
+    background-color: #DE1E10;
+}
+/* ===========common-css-end============== */
+
+/* navbar_part ================*/
+#navbar{
+    width: 100%;
+    background-color: aliceblue;
+    padding: 10px 0;
+}
+#navbar .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .nav .logo img{
+    width: 100px;
+    height: 100px;
+}
+#navbar .nav .menu ul{
+    list-style: none;
+}
+#navbar .nav .menu ul li{
+    display: inline-block;
+}
+#navbar .nav .menu ul li a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: #000;
+    font-size: 17px;
+    font-weight: 600;
+    
+}
+#navbar .nav .menu ul li a:hover{
+    color: #008032;
+}
+#navbar .nav .menu ul li .active{
+    color: #008032;
+}
+#navbar .nav .menu ul li .notis{
+    color: #fff;
+    background-color: #008032;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: all linear 0.4s;
+}
+#navbar .nav .menu ul li .notis:hover{
+    color: #fff;
+    background-color: #DE1E10;
+}
+/* navbar_part ================*/
+
+
+/* banner_part ================*/
+.banner{
+    background-image: url('./image/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    z-index: 999;
+}
+.banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+.banner .banner_des h2{
+    font-size: 65px;
+    line-height: 70px;
+}
+.banner .banner_des p{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding: 20px 0;
+}
+.banner .banner_des .banner_btn{
+    padding-top: 30px;
+}
+
+/* banner_part ================*/
+
+/* services_part ================*/
+.services{
+    padding: 80px 0;
+}
+.services_2{
+    margin-top: 20px;
+}
+.services .item{
+    width: 32%;
+    background-color: rgb(239, 245, 250);
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+}
+.services .item h3{
+    font-size: 22px;
+    line-height: 30px;
+}
+.services .item p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    padding: 15px 0;
+}
+/* services_part ================*/
+
+
+/* about_part ================*/
+.about{
+    padding: 80px 0;
+    
+}
+.about .img{
+    width: 39%;
+}
+.about .img img{
+    width: 100%;
+}
+.about .details{
+    width: 58%;
+}
+.about .details h4{
+    color: #008032;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.about .details h2{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 80px;
+    padding: 0 0 25px 0;
+}
+.about .details p{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.about .details .list{
+    padding: 20px 0;
+}
+.about .details .list li{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.services_btn{
+    padding-top: 20px;
+}
+/* about_part ================*/
+
+
+/* class ================*/
+.class{
+    padding-bottom: 80px;
+    text-align: center;
+}
+.class h3{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 80px;
+    padding: 0 0 25px 0;
+}
+.class .item{
+    width: 32%;
+}
+.class .item img{
+    width: 100%;
+}
+.class .item .item_des{
+    padding: 25px;
+    background-color: azure;
+}
+.class .item .item_des h4{
+    font-size: 22px;
+}
+.class .item .item_des p{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.class_btn{
+    padding: 25px 0;
+}
+/* class ================*/
+
+/* booking ================*/
+.booking{
+    padding: 80px 0;
+    background-color: #fcf5f5;
+}
+.booking .details{
+    width: 58%;
+}
+.booking .details h3{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 80px;
+    padding: 0 0 25px 0;
+}
+.booking .details p{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.booking .details .list{
+    padding: 20px 0;
+}
+.booking .details .list li{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.booking .details .booking_btn{
+    padding: 20px 0;
+}
+.booking .form{
+    width: 40%;
+    padding: 30px;
+}
+.booking .form h2{
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    background-color: #00394F;
+    font-size: 32px;
+    border-radius: 10px 10px 0 0;
+}
+.booking .form .main_form{
+    padding: 30px;
+    background-color: #008032;
+    border-radius: 0 0 10px 10px;
+}
+.booking .form .form-control{
+    width: 100%;
+    padding: 15px 0 15px 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: none;
+}
+.booking .form .submit{
+    width: 100%;
+    background-color: #00394F;
+    color: #fff;
+    padding: 15px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+}
+/* booking ================*/
+
+/* teacher ================*/
+.teacher{
+    padding: 80px 0;
+}
+.teacher h2{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 80px;
+    padding: 0 0 25px 0;
+    text-align: center;
+}
+.teacher .item {
+    width: 23%;
+    text-align: center;
+    box-shadow: 5px 8px 10px #d1d0d0;
+}
+.teacher .item .item_des{
+    padding: 20px;
+}
+.teacher .item .item_des h3{
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.teacher .item img{
+    width: 100%;
+}
+/* teacher ================*/
